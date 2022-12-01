@@ -15,6 +15,7 @@ export class AppComponent {
   name = 'Angular ' + VERSION.major;
   showFlag = false;
   showReportInfo = false;
+  dataSource = null;
 
   constructor(
     private http: HttpClient,
@@ -33,7 +34,9 @@ export class AppComponent {
       .subscribe((data) => {
         console.log('MockWebRequest Reponse:', data);
 
-        this.reportsDataSourceService.generateSourceData([{}, {}]);
+        this.dataSource = [{}, {}];
+        this.reportsDataSourceService.generateSourceData(this.dataSource);
+
         this.showReportInfo = true;
         this.showFlag = true;
       });

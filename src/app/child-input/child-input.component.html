@@ -1,0 +1,8 @@
+<div id="app-child-input">
+  <p>
+    Child Input Comp has recieved valid value from parent:
+
+    <b *ngIf="dataSource; else elseBlock">true</b>
+    <ng-template #elseBlock><b>false</b></ng-template>
+  </p>
+</div>

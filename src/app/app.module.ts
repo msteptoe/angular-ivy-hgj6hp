@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 
 import { ChildComponent } from './child/child.component';
+import { ChildInputComponent } from './child-input/child-input.component';
 import { ChildSubjectComponent } from './child-subject/child-subject.component';
 
 @NgModule({
@@ -15,6 +16,7 @@ import { ChildSubjectComponent } from './child-subject/child-subject.component';
     AppComponent,
     HelloComponent,
     ChildComponent,
+    ChildInputComponent,
     ChildSubjectComponent,
   ],
   bootstrap: [AppComponent],
