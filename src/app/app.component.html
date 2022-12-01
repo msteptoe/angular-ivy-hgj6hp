@@ -1,4 +1,11 @@
 <hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<p>Click the button to see some magic happen :)</p>
+
+<button type="button" (click)="onSave($event)">
+  Dependency Analsysis Request
+</button>
+
+<div *ngIf="showFlag">
+  <p>testing</p>
+  <app-child></app-child>
+</div>

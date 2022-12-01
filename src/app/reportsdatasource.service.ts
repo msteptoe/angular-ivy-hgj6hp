@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-@Injectable()
+@Injectable({ providedIn: 'root' })
 export class ReportsDataSourceService {
   private dataSource: Object | null = null;
 
@@ -8,7 +8,7 @@ export class ReportsDataSourceService {
     console.log('I am in the datasource service!');
   }
 
-  geenrateSourceData(depReportList: Array<{}>): void {
+  generateSourceData(depReportList: Array<{}>): void {
     this.dataSource = { depReportList };
   }
 
